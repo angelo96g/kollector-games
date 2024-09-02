@@ -1,0 +1,49 @@
+#navbarSupportedContent{
+    height: 150px;
+    background-color: rgb(46, 46, 47);
+    
+}
+
+.container-fluid{
+    background-color: rgb(46, 46, 47);
+    
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   box-shadow:10px 10px 15px 8px rgba(229, 140, 16, 0.5); 
+   
+}
+    
+.nav-link{
+    color: white;
+    font-size: 2em;
+    padding: 30px;
+    
+}
+
+.bi-xbox::before{
+    padding: 8px;
+}
+
+.bi.bi-nintendo-switch {
+    color: red;
+    padding: 8px;
+}
+
+.bi-playstation::before{
+    padding: 8px;
+}
+
+#navbarSupportedContent[_ngcontent-ng-c3654284440]{
+    padding: 20px;
+}
+
+
+.bi.bi-controller::before{
+    padding: 8px;
+    color: rgb(6, 234, 9);
+}
+

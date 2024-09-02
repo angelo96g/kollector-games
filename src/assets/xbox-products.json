@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "title": "Halo Infinite",
+      "price": 59.99,
+      "description": "L'ultimo capitolo dell'epica saga di Halo con Master Chief.",
+      "image": "https://m.media-amazon.com/images/I/91SVLtSOJ4L.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Forza Horizon 5",
+      "price": 69.99,
+      "description": "Un'avventura di guida open world ambientata in un vasto mondo messicano.",
+      "image": "https://m.media-amazon.com/images/I/81ZYODM-Y5L._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Gears 5",
+      "price": 39.99,
+      "description": "Uno sparatutto in terza persona con una campagna intensa e multiplayer.",
+      "image": "https://store-images.s-microsoft.com/image/apps.59007.65494054591008504.85c215a9-ad75-4103-b284-e70cd9beb4e1.065578c7-e130-446d-a592-043a178aa8cb"
+    },
+    {
+      "id": 4,
+      "title": "Fable",
+      "price": 69.99,
+      "description": "Un'avventura RPG in un mondo fiabesco pieno di magia e creature.",
+      "image": "https://konsolekingz.co.uk/cdn/shop/files/IMG-0606.webp?v=1715128975"
+    },
+    {
+      "id": 5,
+      "title": "Elden Ring",
+      "price": 69.99,
+      "description": "Un gioco di ruolo d'azione ambientato in un vasto mondo fantasy.",
+      "image": "https://m.media-amazon.com/images/I/718Psopj65L.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Starfield",
+      "price": 69.99,
+      "description": "Un RPG spaziale open world da Bethesda, ambientato in un universo vasto.",
+      "image": "https://m.media-amazon.com/images/I/81fhGI+TS0L._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Redfall",
+      "price": 59.99,
+      "description": "Un gioco d'azione in un open world infestato da vampiri e creature.",
+      "image": "https://m.media-amazon.com/images/I/81ms07FJ7XL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Avowed",
+      "price": 59.99,
+      "description": "Un nuovo RPG in prima persona ambientato in un mondo fantasy ricco di misteri.",
+      "image": "https://gamesandmovies.it/118365-thickbox_default/avowed-prevendita-xbox-series-x-versione-eu-multilingue-xbox-showcase-2024.jpg"
+    }
+  ]
+  
