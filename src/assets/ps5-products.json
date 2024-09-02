@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "id": 1,
@@ -56,3 +57,63 @@
     "image": "https://m.media-amazon.com/images/I/81UyWpCOPNL._AC_UF1000,1000_QL80_.jpg"
   }
 ]
+=======
+[
+  {
+    "id": 1,
+    "title": "Spider-Man: Miles Morales",
+    "price": 49.99,
+    "description": "Un nuovo avventura di Spider-Man con Miles Morales come protagonista.",
+    "image": "https://m.media-amazon.com/images/I/81Ylw+iRUKL.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Demon's Souls",
+    "price": 69.99,
+    "description": "Un remake del classico RPG di FromSoftware con grafica e gameplay migliorati.",
+    "image": "https://m.media-amazon.com/images/I/81bPaMegD8L.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Ratchet & Clank: Rift Apart",
+    "price": 59.99,
+    "description": "Un'avventura tra le dimensioni con i personaggi iconici della serie Ratchet & Clank.",
+    "image": "https://m.media-amazon.com/images/I/81WKfpjLZYL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Black Myth: Wukong",
+    "price": 59.99,
+    "description": "Un action RPG basato sulla mitologia cinese con spettacolari combattimenti e magia.",
+    "image": "https://www.drgames.it/wp-content/uploads/2023/12/black-myth-wukong-ps5-prevendita-versione-eu-multilingue-dr-games.jpg"
+  },
+  {
+    "id": 5,
+    "title": "FC 25",
+    "price": 69.99,
+    "description": "Il nuovo gioco calcistico di EA Sports con squadre aggiornate e nuove modalità.",
+    "image": "https://global-import.eu/wp-content/uploads/2024/07/Fc25PS5.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Star Wars Outlaws",
+    "price": 69.99,
+    "description": "Esplora la galassia come fuorilegge in questo gioco open world di Star Wars.",
+    "image": "https://www.showgame.it/wp-content/uploads/2024/06/PS55371-000-11011.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Hogwarts Legacy",
+    "price": 59.99,
+    "description": "Un gioco di ruolo ambientato a Hogwarts, dove impari magie e combatti creature.",
+    "image": "https://m.media-amazon.com/images/I/81BbKqzl4TL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Assassin's Creed Mirage",
+    "price": 59.99,
+    "description": "Ritorna alle origini con stealth e parkour nella storica Baghdad.",
+    "image": "https://m.media-amazon.com/images/I/81UyWpCOPNL._AC_UF1000,1000_QL80_.jpg"
+  }
+]
+>>>>>>> aa6ced4 (Primo commit)

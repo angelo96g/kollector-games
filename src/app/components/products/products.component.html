@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row">
     <div class="col-md-4" *ngFor="let product of products">
       <div class="card mb-4 shadow-sm">
@@ -15,4 +16,23 @@
       </div>
     </div>
   </div>
+=======
+<div class="row">
+    <div class="col-md-4" *ngFor="let product of products">
+      <div class="card mb-4 shadow-sm">
+        <img class="card-img-top" [src]="product.image" alt="{{ product.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-secondary">Acquista</button>
+            </div>
+            <small class="text-muted">{{ product.price  }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> aa6ced4 (Primo commit)
   
