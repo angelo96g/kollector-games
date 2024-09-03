@@ -30,6 +30,7 @@ export class XboxComponent implements OnInit {
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { XboxProductsService } from '../../services/xbox-products.service';
+import { CarrelloService } from './../../services/carrello.service';
 @Component({
   selector: 'app-xbox',
   standalone: true,
@@ -40,7 +41,7 @@ import { XboxProductsService } from '../../services/xbox-products.service';
 export class XboxComponent implements OnInit {
   products: any[] = [];  // Variabile per conservare i dati dal JSON
 
-  constructor(private xboxProductsService: XboxProductsService) { }  // Iniettare il servizio
+  constructor(private xboxProductsService: XboxProductsService, private carrelloService: CarrelloService ) { }  // Iniettare il servizio
 
   ngOnInit(): void {
     this.xboxProductsService.getProducts().subscribe(  // Utilizzare il servizio correttamente

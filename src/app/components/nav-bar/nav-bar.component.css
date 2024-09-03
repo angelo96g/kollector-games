@@ -64,7 +64,7 @@
     color: white;
     font-size: 3em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   box-shadow:10px 10px 15px 8px rgba(229, 140, 16, 0.5); 
+   
    
 }
     
@@ -98,4 +98,29 @@
     color: rgb(6, 234, 9);
 }
 
+<<<<<<< HEAD
 >>>>>>> aa6ced4 (Primo commit)
+=======
+/* Stile di base per il logo Kollector */
+.navbar-brand {
+    font-size: 40px; /* Dimensione del testo per il logo */
+    font-weight: bold; /* Grassetto per il logo */
+    color: #28a745; /* Colore iniziale del testo verde */
+    text-shadow: 1px 1px 2px #000; /* Ombra per dare profondità al testo */
+    animation: blink 2s infinite; /* Applicazione dell'animazione */
+  }
+  
+  /* Definizione dell'animazione */
+  @keyframes blink {
+    0% {
+      color: #28a745; /* Verde brillante all'inizio */
+    }
+    50% {
+      color: #1f7a33; /* Colore verde scuro a metà */
+    }
+    100% {
+      color: #28a745; /* Ritorno al verde brillante alla fine */
+    }
+  }
+  
+>>>>>>> f6be129 (aggiornamenti)

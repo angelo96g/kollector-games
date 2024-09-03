@@ -38,40 +38,53 @@ export class ProductsService {
 }
 =======
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductsService {
-  private products = new BehaviorSubject<any[]>([]); // Stato dei prodotti
-  filteredProducts = this.products.asObservable(); // Stato dei prodotti filtrati
+  private products = new BehaviorSubject<any[]>([]);  // Stato globale dei prodotti
+  private filteredProducts = new BehaviorSubject<any[]>([]);  // Stato dei prodotti filtrati
 
-  constructor() {
-    // Inizializzazione con alcuni prodotti di esempio
-    this.products.next([
-      { id: 1, title: 'The Legend of Zelda: Breath of the Wild', price: 59.99 },
-      { id: 2, title: 'Mario Kart 8 Deluxe', price: 49.99 },
-      { id: 3, title: 'Animal Crossing: New Horizons', price: 54.99 },
-      // Altri prodotti...
-    ]);
+  constructor(private http: HttpClient) {
+    this.loadProducts();  // Carica i prodotti all'inizializzazione
   }
 
+  // Carica i prodotti dai file JSON
+  private loadProducts() {
+    const urls = [
+      'assets/ps5-products.json',
+      'assets/xbox-products.json',
+      'assets/nintendoswitch-products.json'
+    ];
+
+    urls.forEach(url => {
+      this.http.get<any[]>(url).subscribe(data => {
+        const currentProducts = this.products.getValue();
+        this.products.next([...currentProducts, ...data]);  // Aggiorna la lista di prodotti
+        this.filteredProducts.next([...currentProducts, ...data]);  // Aggiorna anche i prodotti filtrati
+      });
+    });
+  }
+
+  // Filtra i prodotti in base al termine di ricerca
   filterProducts(searchTerm: string) {
     const currentProducts = this.products.getValue();
     if (searchTerm) {
-      // Filtra i prodotti basandosi sul titolo
-      const filtered = currentProducts.filter(products =>
-        products.title.toLowerCase().includes(searchTerm.toLowerCase())
+      const filtered = currentProducts.filter(product =>
+        product.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
-      this.products.next(filtered);
+      this.filteredProducts.next(filtered);  // Aggiorna i prodotti filtrati
     } else {
-      // Mostra tutti i prodotti se il termine di ricerca è vuoto
-      this.products.next(currentProducts);
+      this.filteredProducts.next(currentProducts);  // Mostra tutti i prodotti se il termine di ricerca è vuoto
     }
+  }
+
+  // Restituisce l'osservabile dei prodotti filtrati
+  getFilteredProducts(): Observable<any[]> {
+    return this.filteredProducts.asObservable();
   }
 }
 >>>>>>> aa6ced4 (Primo commit)

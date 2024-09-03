@@ -1,0 +1,67 @@
+.container {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333; /* Colore per il titolo del carrello */
+  }
+  
+  .list-group {
+    margin-bottom: 20px;
+  }
+  
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd; /* Bordo per gli elementi del carrello */
+    border-radius: 5px; /* Angoli arrotondati per gli elementi */
+    margin-bottom: 10px; /* Spaziatura tra gli elementi */
+    padding: 15px; /* Spaziatura interna */
+    background-color: #fff; /* Sfondo bianco per gli elementi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
+  }
+  
+  .list-group-item h5 {
+    margin: 0;
+    color: #007bff; /* Colore per il titolo del prodotto */
+  }
+  
+  .list-group-item p {
+    margin: 0;
+    color: #555; /* Colore per il prezzo del prodotto */
+  }
+  
+  .btn-danger {
+    background-color: #dc3545; /* Colore di sfondo per il bottone "Rimuovi" */
+    border: none; /* Rimuove il bordo */
+    padding: 5px 10px; /* Spaziatura interna del bottone */
+    font-size: 14px; /* Dimensione del testo del bottone */
+  }
+  
+  .btn-warning {
+    background-color: #ffc107; /* Colore di sfondo per il bottone "Svuota Carrello" */
+    border: none; /* Rimuove il bordo */
+    margin-top: 20px; /* Spaziatura sopra il bottone */
+    padding: 10px 20px; /* Spaziatura interna del bottone */
+    font-size: 16px; /* Dimensione del testo del bottone */
+    width: 100%; /* Larghezza al 100% */
+  }
+  
+  .btn-danger:hover,
+  .btn-warning:hover {
+    opacity: 0.8; /* Effetto hover per i bottoni */
+  }
+  
+  @media (max-width: 576px) {
+    .list-group-item {
+      flex-direction: column; /* Allinea verticalmente per schermi piccoli */
+      text-align: center; /* Centra il testo */
+    }
+  
+    .btn-danger {
+      margin-top: 10px; /* Aggiunge uno spazio sopra il bottone "Rimuovi" su schermi piccoli */
+    }
+  }
+  

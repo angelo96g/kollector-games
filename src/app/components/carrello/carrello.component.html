@@ -1,0 +1,14 @@
+<div class="container">
+  <h2>Carrello</h2>
+  <div *ngIf="elementiCarrello.length === 0">Il tuo carrello è vuoto.</div>
+  <ul class="list-group mb-3">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let elemento of elementiCarrello">
+      <div>
+        <h5>{{ elemento.title }}</h5>
+        <p>{{ elemento.price }} €</p>
+      </div>
+      <button class="btn btn-danger btn-sm" (click)="rimuoviElemento(elemento)">Rimuovi</button>
+    </li>
+  </ul>
+  <button class="btn btn-warning" (click)="svuotaCarrello()" [disabled]="elementiCarrello.length === 0">Svuota Carrello</button>
+</div>
