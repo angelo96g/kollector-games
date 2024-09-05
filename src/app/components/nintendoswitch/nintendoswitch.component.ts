@@ -1,4 +1,4 @@
-
+import { CarrelloService } from './../../services/carrello.service';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NintendoswitchProductsService } from '../../services/nintendoswitch-products.service';
@@ -13,7 +13,7 @@ import { NintendoswitchProductsService } from '../../services/nintendoswitch-pro
 export class nintendoswitchComponent implements OnInit {
   products: any[] = [];  // Variabile per conservare i dati dal JSON
 
-  constructor(private nintendoswitchProductsService: NintendoswitchProductsService) { }  // Iniettare il servizio
+  constructor(private nintendoswitchProductsService: NintendoswitchProductsService, private carrelloService : CarrelloService) { }  // Iniettare il servizio
 
   ngOnInit(): void {
     this.nintendoswitchProductsService.getProducts().subscribe(  // Utilizzare il servizio correttamente
@@ -25,5 +25,8 @@ export class nintendoswitchComponent implements OnInit {
         console.error('Errore nel recupero dei dati', error);
       }
     );
+  }
+  aggiungiAlCarrello(prodotto: any) {
+    this.carrelloService.aggiungiAlCarrello(prodotto);  // Aggiungi il prodotto al carrello tramite il servizio
   }
 }

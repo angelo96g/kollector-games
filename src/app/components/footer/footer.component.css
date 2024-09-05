@@ -1,0 +1,50 @@
+/* Stile per il body e il contenitore principale */
+body {
+    display: flex;
+    flex-direction: column; /* Posiziona gli elementi in colonna */
+    min-height: 100vh; /* Imposta l'altezza minima al 100% della viewport */
+    margin: 0; /* Rimuove margini predefiniti */
+  }
+  
+  .main-content {
+    flex: 1; /* Prende tutto lo spazio disponibile */
+    padding: 20px; /* Spaziatura interna */
+  }
+  
+  /* Stile per il footer */
+  footer {
+    margin-top: auto; /* Spinge il footer in fondo */
+    width: 100%; /* Assicura che il footer prenda l'intera larghezza */
+    background-color: var(--bs-body-tertiary); /* Utilizza variabile Bootstrap per lo sfondo */
+    text-align: center; /* Centra il testo */
+    padding: 10px 0; /* Spaziatura interna */
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Bordo superiore */
+  }
+  
+  footer .container {
+    padding: 20px; /* Spaziatura interna del contenitore nel footer */
+  }
+  
+  footer .btn-floating {
+    margin: 5px; /* Spaziatura tra i pulsanti */
+    border-radius: 50%; /* Pulsanti circolari */
+  }
+  
+  footer .text-body {
+    color: #000; /* Colore del testo per i link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+  }
+  
+  footer .text-body:hover {
+    color: #007bff; /* Cambia colore al passaggio del mouse */
+    text-decoration: underline; /* Sottolinea al passaggio del mouse */
+  }
+  
+  /* Media query per rendere il footer reattivo su schermi piccoli */
+  @media (max-width: 576px) {
+    footer .btn-floating {
+      width: 100%; /* Pulsanti a larghezza piena su schermi piccoli */
+      margin-bottom: 10px; /* Spaziatura inferiore tra i pulsanti */
+    }
+  }
+  

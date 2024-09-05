@@ -7,7 +7,8 @@
             <h5 class="card-title">{{ product.title }}</h5>
             <p class="card-text">{{ product.description }}</p>
             <div class="mt-auto">
-              <a href="#" class="btn btn-primary">Acquista - {{ product.price | currency:'EUR' }} </a>
+              <button href="#" class="btn btn-primary"(click)="aggiungiAlCarrello(product)" >Acquista - {{ product.price | currency:'EUR' }} </button>
+              
             </div>
           </div>
         </div>

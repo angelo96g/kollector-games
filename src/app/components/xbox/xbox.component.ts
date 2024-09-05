@@ -25,4 +25,7 @@ export class XboxComponent implements OnInit {
       }
     );
   }
+  aggiungiAlCarrello(prodotto: any) {
+    this.carrelloService.aggiungiAlCarrello(prodotto);  // Aggiungi il prodotto al carrello tramite il servizio
+  }
 }

@@ -1,55 +1,55 @@
 [
     {
-      "id": 1,
+      "id": 18,
       "title": "The Legend of Zelda: Breath of the Wild",
       "price": 59.99,
       "description": "Un'epica avventura open-world in cui Link esplora il vasto mondo di Hyrule per sconfiggere il malvagio Calamity Ganon.",
       "image": "https://m.media-amazon.com/images/I/91zYKmF4jjL.jpg"
     },
     {
-      "id": 2,
+      "id": 19,
       "title": "Mario Kart 8 Deluxe",
       "price": 49.99,
       "description": "Il gioco di corse più amato ritorna con nuovi personaggi, piste e oggetti, oltre a una modalità multigiocatore migliorata.",
       "image": "https://m.media-amazon.com/images/I/71C9pOGlKtL._AC_UF894,1000_QL80_.jpg"
     },
     {
-      "id": 3,
+      "id": 20,
       "title": "Animal Crossing: New Horizons",
       "price": 54.99,
       "description": "Costruisci la tua isola paradisiaca, incontra nuovi amici e vivi la tua vita ideale in un mondo rilassante e immersivo.",
       "image": "https://m.media-amazon.com/images/I/81QvUXy2qpL._AC_UF1000,1000_QL80_.jpg"
     },
     {
-      "id": 4,
+      "id": 21,
       "title": "Super Mario Odyssey",
       "price": 59.99,
       "description": "Un'avventura globale in 3D in cui Mario deve salvare la Principessa Peach da Bowser usando nuove abilità con l'aiuto del cappello Cappy.",
       "image": "https://m.media-amazon.com/images/I/81j4egKQniL._AC_UF894,1000_QL80_.jpg"
     },
     {
-      "id": 5,
+      "id": 22,
       "title": "Splatoon 3",
       "price": 59.99,
       "description": "Il colorato gioco di combattimento a squadre ritorna con nuove armi, mappe e modalità di gioco per il massimo divertimento multiplayer.",
       "image": "https://m.media-amazon.com/images/I/81dRB41yHrL._AC_UF894,1000_QL80_.jpg"
     },
     {
-      "id": 6,
+      "id": 23,
       "title": "Pokémon Sword",
       "price": 49.99,
       "description": "Esplora la regione di Galar e diventa il Campione Pokémon in questa avventura di ruolo piena di battaglie, catture e esplorazioni.",
       "image": "https://m.media-amazon.com/images/I/81-QH2Lyy4L.jpg"
     },
     {
-      "id": 7,
+      "id": 24,
       "title": "Luigi's Mansion 3",
       "price": 49.99,
       "description": "Unisciti a Luigi mentre esplora un hotel infestato, risolve puzzle e sconfigge fantasmi per salvare Mario e i suoi amici.",
       "image": "https://m.media-amazon.com/images/I/81cHm50auZL._AC_UF1000,1000_QL80_.jpg"
     },
     {
-      "id": 8,
+      "id": 25,
       "title": "Metroid Dread",
       "price": 59.99,
       "description": "Un nuovo capitolo della serie Metroid che combina esplorazione e azione intensa in un ambiente 2D pieno di misteri e pericoli.",

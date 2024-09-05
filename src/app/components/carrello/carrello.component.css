@@ -14,10 +14,14 @@
 }
 
 .list-group-item img {
-  width: 100px; /* Larghezza dell'immagine */
-  height: auto; /* Mantiene il rapporto di aspetto originale */
-  border-radius: 5px; /* Angoli arrotondati per l'immagine */
-  margin-bottom: 15px; /* Spaziatura sotto l'immagine */
+  .list-group-item img {
+    width: 100px; /* Larghezza dell'immagine */
+    height: auto; /* Mantiene il rapporto di aspetto originale */
+    border-radius: 5px; /* Angoli arrotondati per l'immagine */
+    margin-bottom: 15px; /* Spaziatura sotto l'immagine */
+    align-self: center; /* Centra l'immagine all'interno del contenitore flex */
+  }
+  
 }
 
 .list-group-item h5,
