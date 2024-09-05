@@ -1,4 +1,3 @@
-// carrello.service.ts
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -12,7 +11,16 @@ export class CarrelloService {
   // Metodo per aggiungere un prodotto al carrello
   aggiungiAlCarrello(prodotto: any) {
     const carrelloAttuale = this.elementiCarrello.getValue();
-    this.elementiCarrello.next([...carrelloAttuale, prodotto]);
+    // Verifica se il prodotto è già nel carrello
+    const esisteNelCarrello = carrelloAttuale.find(item => item.id === prodotto.id);
+
+    if (esisteNelCarrello) {
+      // Se il prodotto è già nel carrello, incrementa la quantità
+      esisteNelCarrello.quantity = (esisteNelCarrello.quantity || 1) + 1;
+    } else {
+      // Altrimenti aggiungi il prodotto con una quantità iniziale di 1
+      this.elementiCarrello.next([...carrelloAttuale, { ...prodotto, quantity: 1 }]);
+    }
   }
 
   // Metodo per ottenere i prodotti nel carrello

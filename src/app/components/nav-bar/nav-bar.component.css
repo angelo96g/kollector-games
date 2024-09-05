@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #navbarSupportedContent{
     height: 150px;
     background-color: rgb(46, 46, 47);
@@ -48,7 +48,7 @@
     color: rgb(6, 234, 9);
 }
 
-=======
+
 #navbarSupportedContent{
     height: 150px;
     background-color: rgb(46, 46, 47);
@@ -98,9 +98,7 @@
     color: rgb(6, 234, 9);
 }
 
-<<<<<<< HEAD
->>>>>>> aa6ced4 (Primo commit)
-=======
+
 /* Stile di base per il logo Kollector */
 .navbar-brand {
     font-size: 40px; /* Dimensione del testo per il logo */
@@ -122,5 +120,3 @@
       color: #28a745; /* Ritorno al verde brillante alla fine */
     }
   }
-  
->>>>>>> f6be129 (aggiornamenti)

@@ -4,6 +4,7 @@
   <ul class="list-group mb-3">
     <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let elemento of elementiCarrello">
       <div>
+        <img class="card-img-top" [src]="elemento.image" alt="Card image cap">
         <h5>{{ elemento.title }}</h5>
         <p>{{ elemento.price }} €</p>
       </div>
