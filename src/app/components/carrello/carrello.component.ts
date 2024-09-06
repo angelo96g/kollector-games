@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CarrelloComponent implements OnInit {
   elementiCarrello: any[] = [];
+  totaleCarrello: number = 0; // Aggiunto per il totale del carrello
 
   constructor(private carrelloService: CarrelloService) { }
 
@@ -18,6 +19,7 @@ export class CarrelloComponent implements OnInit {
     // Sottoscrizione per ottenere gli elementi aggiornati nel carrello
     this.carrelloService.ottieniElementiCarrello().subscribe(elementi => {
       this.elementiCarrello = elementi;  // Assegna i dati aggiornati
+      this.totaleCarrello = this.carrelloService.calcolaTotale(); // Calcola il totale ogni volta che il carrello cambia
     });
   }
 
@@ -27,5 +29,8 @@ export class CarrelloComponent implements OnInit {
 
   svuotaCarrello() {
     this.carrelloService.svuotaCarrello();
+  }
+  cambiaColore(){
+    
   }
 }

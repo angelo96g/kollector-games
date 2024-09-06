@@ -3,7 +3,7 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 80vh;
-	transition: 0.5s;
+	transition: 0.2s;
     max-width: 3000px;
 }
 
@@ -15,3 +15,16 @@ h5{
     background-color: black;
     padding: 2px;
 }
+/* app.component.css */
+body.light-theme {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s; /* Transizione per effetto liscio */
+  }
+  
+  /* Tema Dark */
+  body.dark-theme {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Transizione per effetto liscio */
+  }

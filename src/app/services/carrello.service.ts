@@ -19,7 +19,8 @@ export class CarrelloService {
       esisteNelCarrello.quantity = (esisteNelCarrello.quantity || 1) + 1;
     } else {
       // Altrimenti aggiungi il prodotto con una quantità iniziale di 1
-      this.elementiCarrello.next([...carrelloAttuale, { ...prodotto, quantity: 1 }]);
+      const prezzo = Number(prodotto.price) || 0; // Assicurati che il prezzo sia un numero
+      this.elementiCarrello.next([...carrelloAttuale, { ...prodotto, price: prezzo, quantity: 1 }]);
     }
   }
 
@@ -38,5 +39,15 @@ export class CarrelloService {
   // Metodo per svuotare il carrello
   svuotaCarrello() {
     this.elementiCarrello.next([]);
+  }
+
+  // Metodo per calcolare il totale del carrello
+  calcolaTotale(): number {
+    const carrelloAttuale = this.elementiCarrello.getValue();
+    return carrelloAttuale.reduce((totale, item) => {
+      const prezzo = Number(item.price) || 0; // Assicurati che il prezzo sia un numero
+      const quantita = Number(item.quantity) || 0; // Assicurati che la quantità sia un numero
+      return totale + (prezzo * quantita);
+    }, 0);
   }
 }

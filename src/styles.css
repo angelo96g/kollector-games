@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body.light-theme {
+    background-color: white;
+    color: rgb(47, 46, 46);
+    transition: background-color 0.3s, color 0.3s; /* Transizione per effetto liscio */
+  }
+  
+  /* Tema Dark */
+  body.dark-theme {
+    background-color: rgb(46, 45, 45);
+    color: white;
+    transition: background-color 0.3s, color 0.3s; /* Transizione per effetto liscio */
+  }
+
+  

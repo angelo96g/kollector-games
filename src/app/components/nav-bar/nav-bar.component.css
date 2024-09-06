@@ -1,4 +1,9 @@
-
+.navbar{
+   padding-bottom: 0%;
+   padding-top: 0%;
+   border: 2px solid;
+   border-color: #28a745;
+}
 #navbarSupportedContent{
     height: 150px;
     background-color: rgb(46, 46, 47);

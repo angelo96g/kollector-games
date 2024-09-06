@@ -1,27 +1,41 @@
+/* Contenitore per le card */
+.list-group {
+  display: grid; /* Usa il Grid Layout */
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne di larghezza uguale */
+  gap: 15px; /* Spaziatura tra gli elementi della griglia */
+  padding: 0; /* Rimuove il padding */
+  margin: 0; /* Rimuove il margine */
+  list-style: none; /* Rimuove i punti elenco */
+}
+
+/* Ogni card */
 .list-group-item {
-  display: flex;
+  display: flex; /* Utilizza flexbox per il layout interno della card */
   flex-direction: column; /* Dispone il contenuto della card in colonna */
   justify-content: space-between; /* Spazio tra gli elementi */
   align-items: center; /* Centra gli elementi */
   border: 1px solid #ddd; /* Bordo per gli elementi del carrello */
   border-radius: 5px; /* Angoli arrotondati per gli elementi */
-  margin-bottom: 10px; /* Spaziatura tra gli elementi */
   padding: 15px; /* Spaziatura interna */
   background-color: #fff; /* Sfondo bianco per gli elementi */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
-  max-width: 300px; /* Limita la larghezza delle card */
-  width: 100%; /* Assicura che le card non superino la larghezza del contenitore */
+  box-sizing: border-box; /* Include padding e bordo nella larghezza e altezza */
+  max-width: 100%; /* Assicura che le card non superino la larghezza del contenitore */
+  text-align: center; /* Centra il contenuto di testo */
 }
 
+/* Stile dell'immagine */
 .list-group-item img {
-  .list-group-item img {
-    width: 100px; /* Larghezza dell'immagine */
-    height: auto; /* Mantiene il rapporto di aspetto originale */
-    border-radius: 5px; /* Angoli arrotondati per l'immagine */
-    margin-bottom: 15px; /* Spaziatura sotto l'immagine */
-    align-self: center; /* Centra l'immagine all'interno del contenitore flex */
-  }
-  
+  width: 150px; /* Aumenta la larghezza dell'immagine */
+  height: auto; /* Mantiene il rapporto di aspetto originale */
+  border-radius: 8px; /* Angoli arrotondati per l'immagine */
+  margin-bottom: 15px; /* Spaziatura sotto l'immagine */
+  align-self: center; /* Centra l'immagine all'interno del contenitore flex */
+  transition: transform 0.3s ease; /* Effetto hover fluido */
+}
+
+.list-group-item img:hover {
+  transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
 }
 
 .list-group-item h5,
@@ -60,12 +74,37 @@
   opacity: 0.8; /* Effetto hover per i bottoni */
 }
 
+@media (max-width: 768px) {
+  .list-group {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonne su schermi medi */
+  }
+}
+
 @media (max-width: 576px) {
-  .list-group-item {
-    max-width: 100%; /* Assicura che le card utilizzino l'intera larghezza disponibile */
+  .list-group {
+    grid-template-columns: 1fr; /* 1 colonna su schermi piccoli */
   }
 
   .btn-danger {
     margin-top: 10px; /* Aggiunge uno spazio sopra il bottone "Rimuovi" su schermi piccoli */
+  }
+}
+
+.totale {
+  color: #007bff;
+  background-color: #d2cece;
+  text-shadow: 1px 1px 2px #000; /* Ombra per dare profondità al testo */
+  animation: blink 2s infinite; /* Applicazione dell'animazione */
+}
+
+@keyframes blink {
+  0% {
+    color: #0846ca; /* Verde brillante all'inizio */
+  }
+  50% {
+    color: #0c29ce; /* Colore verde scuro a metà */
+  }
+  100% {
+    color: #0d57d6; /* Ritorno al verde brillante alla fine */
   }
 }

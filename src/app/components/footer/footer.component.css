@@ -19,6 +19,8 @@ body {
     text-align: center; /* Centra il testo */
     padding: 10px 0; /* Spaziatura interna */
     border-top: 1px solid rgba(0, 0, 0, 0.1); /* Bordo superiore */
+    padding-bottom: 0%;
+    
   }
   
   footer .container {
@@ -47,4 +49,8 @@ body {
       margin-bottom: 10px; /* Spaziatura inferiore tra i pulsanti */
     }
   }
-  
+  footer {
+    background-color: #272827 !important; /* Cambia il colore di sfondo a verde chiaro */
+    border: 2px solid;
+    border-color: #28a745;
+}

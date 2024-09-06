@@ -12,7 +12,7 @@ import { NintendoswitchProductsService } from '../../services/nintendoswitch-pro
 })
 export class nintendoswitchComponent implements OnInit {
   products: any[] = [];  // Variabile per conservare i dati dal JSON
-
+  
   constructor(private nintendoswitchProductsService: NintendoswitchProductsService, private carrelloService : CarrelloService) { }  // Iniettare il servizio
 
   ngOnInit(): void {
@@ -29,4 +29,5 @@ export class nintendoswitchComponent implements OnInit {
   aggiungiAlCarrello(prodotto: any) {
     this.carrelloService.aggiungiAlCarrello(prodotto);  // Aggiungi il prodotto al carrello tramite il servizio
   }
+  
 }
