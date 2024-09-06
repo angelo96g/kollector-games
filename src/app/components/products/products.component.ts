@@ -4,6 +4,7 @@ import { ProductsService } from '../../services/products.service';
 import { CommonModule } from '@angular/common';
 
 
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',

@@ -1,23 +1,33 @@
-
+import { Component, OnInit } from '@angular/core';
+import { ActionfigureService } from '../../services/actionfigure.service';
+import { CarrelloService } from '../../services/carrello.service';
 import { CommonModule } from '@angular/common';
-import { ActionfigureService } from './../../services/actionfigure.service';
-import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-actionfigure',
+  selector: 'app-action-figures',
   standalone: true,
-  imports: [CommonModule],
   templateUrl: './actionfigure.component.html',
-  styleUrls: ['./actionfigure.component.css'] // Correzione da 'styleUrl' a 'styleUrls'
+  styleUrls: ['./actionfigure.component.css'],
+  imports: [CommonModule]
 })
-export class ActionfigureComponent {
-  actionFigures: any[] = [];
+export class ActionFigureComponent implements OnInit {
+  actionFigures: any[] = [];  // Variabile per conservare i dati delle action figures
 
-  constructor(private actionfigureService: ActionfigureService) {}
+  constructor(private actionfigureService: ActionfigureService, private carrelloService: CarrelloService) { }
 
   ngOnInit(): void {
-    this.actionfigureService.getData().subscribe(response => {
-      this.actionFigures = response; // Assegna direttamente la risposta JSON
-    });
+    this.actionfigureService.getData().subscribe(
+      (response) => {
+        this.actionFigures = response;
+        console.log(this.actionFigures);
+      },
+      (error) => {
+        console.error('Errore nel recupero dei dati', error);
+      }
+    );
+  }
+
+  aggiungiAlCarrello(figure: any) {
+    this.carrelloService.aggiungiAlCarrello(figure);
   }
 }

@@ -1,13 +1,16 @@
-<div *ngIf="actionFigures.length > 0; else noData">
-    <div *ngFor="let figure of actionFigures" class="figure-card">
-      <h3>{{ figure.title }}</h3>
-      <img [src]="figure.image" alt="{{ figure.title }}" width="150" height="200">
-      <p>{{ figure.description }}</p>
-      <p>Prezzo: {{ figure.price | currency }}</p>
+<div class="container">
+  <div class="row justify-content-center">
+    <div *ngFor="let figure of actionFigures" class="col-md-3 d-flex align-items-stretch">
+      <div class="card h-100 d-flex flex-column" style="width: 18rem;">
+        <img class="card-img-top" [src]="figure.image" alt="Card image cap">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ figure.title }}</h5>
+          <p class="card-text">{{ figure.description }}</p>
+          <div class="mt-auto">
+            <button class="btn btn-primary" (click)="aggiungiAlCarrello(figure)">Acquista - {{ figure.price | currency:'EUR' }}</button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  
-  <ng-template #noData>
-    <p>Nessuna action figure disponibile.</p>
-  </ng-template>
-  
+</div>

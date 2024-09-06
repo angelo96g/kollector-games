@@ -1,7 +1,3 @@
-import { Component } from '@angular/core';
-
-
-
 
 import { Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -10,7 +6,7 @@ import { XboxComponent } from './components/xbox/xbox.component';
 import { nintendoswitchComponent } from './components/nintendoswitch/nintendoswitch.component';
 import { ProductsComponent } from './components/products/products.component';
 import { CarrelloComponent } from './components/carrello/carrello.component';
-import { ActionfigureComponent } from './components/actionfigure/actionfigure.component';
+import { ActionFigureComponent } from './components/actionfigure/actionfigure.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -19,6 +15,6 @@ export const routes: Routes = [
     {path : 'nintendoswitch', component:nintendoswitchComponent},
     {path : 'products', component: ProductsComponent},
     {path : 'carrello', component: CarrelloComponent},
-    {path : 'actionfigure', component: ActionfigureComponent}
+    {path : 'actionfigure', component: ActionFigureComponent}
 ];
 

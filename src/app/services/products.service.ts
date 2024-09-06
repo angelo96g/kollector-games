@@ -10,11 +10,12 @@ export class ProductsService {
   private filteredProducts = new BehaviorSubject<any[]>([]);  // Stato dei prodotti filtrati
 
   constructor(private http: HttpClient) {
-    this.loadProducts();  // Carica i prodotti all'inizializzazione
+    this.loadLocalProducts();  // Carica i prodotti locali all'inizializzazione
+    this.loadServerProducts();  // Carica i prodotti dal server Node.js
   }
 
-  // Carica i prodotti dai file JSON
-  private loadProducts() {
+  // Carica i prodotti dai file JSON locali
+  private loadLocalProducts() {
     const urls = [
       'assets/ps5-products.json',
       'assets/xbox-products.json',
@@ -28,6 +29,23 @@ export class ProductsService {
         this.filteredProducts.next([...currentProducts, ...data]);  // Aggiorna anche i prodotti filtrati
       });
     });
+  }
+
+  // Carica i prodotti dal server Node.js
+  private loadServerProducts() {
+    const serverUrl = 'http://localhost:3000/action-figures'; // Assicurati che l'URL sia corretto
+
+    this.http.get<any[]>(serverUrl).subscribe(
+      data => {
+        console.log('Dati ricevuti dal server:', data); // Log per il debug
+        const currentProducts = this.products.getValue();
+        this.products.next([...currentProducts, ...data]);  // Aggiorna la lista di prodotti
+        this.filteredProducts.next([...currentProducts, ...data]);  // Aggiorna anche i prodotti filtrati
+      },
+      error => {
+        console.error('Errore nel recupero dei dati dal server:', error);
+      }
+    );
   }
 
   // Filtra i prodotti in base al termine di ricerca
