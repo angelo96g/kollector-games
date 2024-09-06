@@ -11,5 +11,3 @@ body.light-theme {
     color: white;
     transition: background-color 0.3s, color 0.3s; /* Transizione per effetto liscio */
   }
-
-  

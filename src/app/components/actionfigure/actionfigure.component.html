@@ -1,0 +1,13 @@
+<div *ngIf="actionFigures.length > 0; else noData">
+    <div *ngFor="let figure of actionFigures" class="figure-card">
+      <h3>{{ figure.title }}</h3>
+      <img [src]="figure.image" alt="{{ figure.title }}" width="150" height="200">
+      <p>{{ figure.description }}</p>
+      <p>Prezzo: {{ figure.price | currency }}</p>
+    </div>
+  </div>
+  
+  <ng-template #noData>
+    <p>Nessuna action figure disponibile.</p>
+  </ng-template>
+  
