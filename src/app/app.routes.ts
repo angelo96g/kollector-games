@@ -7,6 +7,7 @@ import { nintendoswitchComponent } from './components/nintendoswitch/nintendoswi
 import { ProductsComponent } from './components/products/products.component';
 import { CarrelloComponent } from './components/carrello/carrello.component';
 import { ActionFigureComponent } from './components/actionfigure/actionfigure.component';
+import { LoginComponent } from './components/login/login.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ export const routes: Routes = [
     {path : 'nintendoswitch', component:nintendoswitchComponent},
     {path : 'products', component: ProductsComponent},
     {path : 'carrello', component: CarrelloComponent},
-    {path : 'actionfigure', component: ActionFigureComponent}
+    {path : 'actionfigure', component: ActionFigureComponent},
+    {path : 'login', component : LoginComponent}
 ];
 

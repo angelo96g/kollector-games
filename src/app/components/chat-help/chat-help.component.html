@@ -1,0 +1,19 @@
+<div class="chat-container">
+    <button class="chat-toggle" (click)="toggleChat()">Help</button>
+    <div class="chat-box" [ngClass]="{'open': isOpen}">
+      <div class="chat-header">
+        <h3>Chat Help</h3>
+        <button class="close-button" (click)="toggleChat()">×</button>
+      </div>
+      <div class="chat-body">
+        <div *ngFor="let msg of chatMessages" [ngClass]="{'user-message': msg.type === 'user', 'bot-message': msg.type === 'bot'}">
+          <strong>{{ msg.type === 'user' ? 'Utente:' : 'Bot:' }}</strong> {{ msg.text }}
+        </div>
+      </div>
+      <div class="chat-footer">
+        <input type="text" placeholder="Type your message..." [(ngModel)]="message" (keyup.enter)="sendMessage()">
+        <button (click)="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
+  

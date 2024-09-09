@@ -65,4 +65,5 @@ export class ProductsService {
   getFilteredProducts(): Observable<any[]> {
     return this.filteredProducts.asObservable();
   }
+  
 }
