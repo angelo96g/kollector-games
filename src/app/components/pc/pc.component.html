@@ -1,0 +1,9 @@
+<div *ngFor="let product of products" class="product-card">
+    <img [src]="product.image" alt="{{ product.name }}" class="product-card-img">
+    <div class="product-card-body">
+      <h2 class="product-card-title">{{ product.name }}</h2>
+      <p class="product-card-description">{{ product.description }}</p>
+      <button href="#" class="btn btn-primary"(click)="aggiungiAlCarrello(product)" >Acquista - {{ product.price | currency:'EUR' }} </button>
+    </div>
+  </div>
+  

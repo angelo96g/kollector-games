@@ -8,6 +8,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { CarrelloComponent } from './components/carrello/carrello.component';
 import { ActionFigureComponent } from './components/actionfigure/actionfigure.component';
 import { LoginComponent } from './components/login/login.component';
+import { PcComponent } from './components/pc/pc.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
     {path : 'products', component: ProductsComponent},
     {path : 'carrello', component: CarrelloComponent},
     {path : 'actionfigure', component: ActionFigureComponent},
-    {path : 'login', component : LoginComponent}
+    {path : 'login', component : LoginComponent},
+    {path: 'pc', component : PcComponent}
 ];
 

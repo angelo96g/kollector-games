@@ -1,0 +1,74 @@
+/* Contenitore per la card */
+.product-card {
+    border: 1px solid #ddd; /* Bordo sottile per la card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra più leggera per la card */
+    border-radius: 6px; /* Angoli arrotondati più piccoli */
+    overflow: hidden; /* Assicura che gli elementi interni non trabocchino */
+    padding: 10px; /* Spazio interno per la card */
+    margin-bottom: 20px; /* Spazio tra le card */
+    background-color: #fff; /* Colore di sfondo bianco per la card */
+    display: flex;
+    flex-direction: column; /* Disposizione verticale del contenuto */
+    height: auto; /* Altezza automatica per adattarsi al contenuto */
+    max-width: 250px; /* Larghezza massima per la card */
+  }
+  
+  /* Stile dell'immagine */
+  .product-card-img {
+    width: 100%; /* Larghezza dell'immagine al 100% del contenitore */
+    height: 150px; /* Altezza ridotta per l'immagine */
+    object-fit: cover; /* Mantiene l'immagine coperta senza distorcere */
+    border-radius: 6px; /* Arrotonda gli angoli dell'immagine */
+    margin-bottom: 10px; /* Spazio sotto l'immagine */
+  }
+  
+  /* Corpo della card */
+  .product-card-body {
+    display: flex;
+    flex-direction: column; /* Disposizione verticale del contenuto */
+    flex: 1; /* Permette al corpo della card di espandersi per riempire lo spazio */
+  }
+  
+  /* Titolo della card */
+  .product-card-title {
+    font-size: 16px; /* Dimensione del titolo ridotta */
+    margin-bottom: 8px; /* Spazio sotto il titolo */
+    font-weight: bold; /* Rende il titolo in grassetto */
+    color: #333; /* Colore del titolo */
+  }
+  
+  /* Descrizione e prezzo */
+  .product-card-description,
+  .product-card-price {
+    font-size: 12px; /* Dimensione del testo ridotta */
+    color: #555; /* Colore del testo descrittivo */
+    margin-bottom: 8px; /* Spazio tra i paragrafi */
+  }
+  
+  /* Bottone */
+  .btn-primary {
+    background-color: #007bff; /* Colore del bottone */
+    border: none; /* Nessun bordo */
+    border-radius: 4px; /* Bottone arrotondato */
+    padding: 8px 16px; /* Spaziatura interna del bottone */
+    font-size: 14px; /* Dimensione del testo del bottone */
+    color: #fff; /* Colore del testo del bottone */
+    text-align: center; /* Centra il testo nel bottone */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    display: block; /* Rende il bottone a blocco */
+    width: 100%; /* Larghezza del bottone uguale alla larghezza della card */
+    margin-top: auto; /* Spinge il bottone in fondo alla card */
+    transition: background-color 0.3s; /* Transizione morbida per il colore di hover */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Colore hover del bottone */
+  }
+  
+  /* Responsività */
+  @media (min-width: 768px) {
+    .product-card {
+      margin-bottom: 15px; /* Spazio tra le card per dispositivi più grandi */
+    }
+  }
+  
