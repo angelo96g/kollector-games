@@ -33,7 +33,7 @@ export class ProductsService {
 
   // Carica i prodotti dal server Node.js
   private loadServerProducts() {
-    const serverUrl = 'http://localhost:3000/action-figures'; // Assicurati che l'URL sia corretto
+    const serverUrl = 'https://back-end-omega-red.vercel.app/action-figures'; // Assicurati che l'URL sia corretto
 
     this.http.get<any[]>(serverUrl).subscribe(
       data => {
