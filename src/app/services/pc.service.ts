@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PcService {
     // private apiUrl = 'http://localhost:3000/products'  // Endpoint del backend per recuperare i prodotti
-private apiUrl = 'https://back-end-omega-red.vercel.app/products'
+private apiUrl = 'https://back-end-omega-red.vercel.app/pc'
   constructor(private http: HttpClient) { }
 
   // Metodo per recuperare tutti i prodotti
