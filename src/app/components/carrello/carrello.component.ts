@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
   selector: 'app-carrello',
   templateUrl: './carrello.component.html',
   styleUrls: ['./carrello.component.css'],
-  imports:[CommonModule],
-  standalone:true
+  imports: [CommonModule],
+  standalone: true
 })
 export class CarrelloComponent implements OnInit {
   elementiCarrello: any[] = [];
@@ -29,8 +29,5 @@ export class CarrelloComponent implements OnInit {
 
   svuotaCarrello() {
     this.carrelloService.svuotaCarrello();
-  }
-  cambiaColore(){
-    
   }
 }
