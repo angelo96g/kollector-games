@@ -107,3 +107,56 @@
     border-radius: 5px;
   }
   
+  /* Media Query per schermi piccoli come telefoni (max larghezza 600px) */
+@media (max-width: 600px) {
+  .chat-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .chat-box {
+    width: 100%;
+    height: 80%; /* Fa sì che la chat occupi gran parte dello schermo su dispositivi mobili */
+    bottom: 0;
+    right: 0;
+    border-radius: 0; /* Rimuove i bordi arrotondati per un aspetto più pulito su mobile */
+  }
+
+  .chat-header {
+    font-size: 16px; /* Riduce la dimensione del testo nella header */
+    padding: 10px 15px;
+  }
+
+  .chat-body {
+    height: calc(100% - 120px); /* Mantiene l'altezza del corpo della chat flessibile rispetto alla chat-footer */
+    padding: 10px;
+  }
+
+  .chat-footer {
+    flex-direction: column; /* Cambia l'allineamento del footer per adattarsi a schermi più stretti */
+    padding: 10px;
+  }
+
+  .chat-footer input {
+    width: 100%; /* L'input occupa tutta la larghezza disponibile */
+    margin-bottom: 10px;
+  }
+
+  .chat-footer button {
+    width: 100%; /* Il pulsante "Send" occupa tutta la larghezza disponibile */
+    padding: 10px;
+  }
+
+  .chat-toggle {
+    padding: 15px;
+    font-size: 18px; /* Aumenta la dimensione del pulsante per renderlo più facilmente cliccabile */
+  }
+
+  .user-message, .bot-message {
+    font-size: 14px; /* Riduce la dimensione del testo per una migliore leggibilità su schermi più piccoli */
+  }
+}

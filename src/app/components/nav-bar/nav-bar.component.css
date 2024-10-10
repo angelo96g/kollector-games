@@ -125,3 +125,60 @@
       color: #28a745; /* Ritorno al verde brillante alla fine */
     }
   }
+
+  /* Media query per schermi di dimensioni inferiori a 768px */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Riduci il padding della navbar */
+    }
+
+    .navbar-brand {
+        font-size: 2em; /* Riduci la dimensione del font del logo */
+    }
+
+    .nav-link {
+        font-size: 1.5em; /* Riduci la dimensione del font dei link */
+        padding: 15px; /* Riduci il padding dei link */
+    }
+
+    #navbarSupportedContent {
+        height: auto; /* Consenti l'altezza automatica per la navbar */
+    }
+
+    .navbar-toggler {
+        margin-left: auto; /* Allinea il bottone del toggle a destra */
+    }
+
+    /* Modifica l'aspetto dei dropdown */
+    .dropdown-menu {
+        position: absolute; /* Assicurati che il dropdown si apra in modo corretto */
+        z-index: 1000; /* Aumenta lo z-index se necessario */
+    }
+}
+
+/* Media query per schermi di dimensioni inferiori a 576px */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.5em; /* Ulteriore riduzione della dimensione del font del logo */
+    }
+
+    .nav-link {
+        font-size: 1.2em; /* Ulteriore riduzione della dimensione del font dei link */
+        padding: 10px; /* Ulteriore riduzione del padding */
+    }
+
+    .login-form {
+        width: 90%; /* Consenti alla form di login di occupare il 90% dello schermo */
+    }
+
+    /* Modifiche specifiche per il search input */
+    .form-control {
+        font-size: 0.9em; /* Riduci la dimensione del font dell'input di ricerca */
+        padding: 5px; /* Riduci il padding dell'input */
+    }
+
+    .btn {
+        font-size: 0.9em; /* Riduci la dimensione del font del pulsante */
+        padding: 5px 10px; /* Riduci il padding del pulsante */
+    }
+}

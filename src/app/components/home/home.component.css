@@ -28,3 +28,26 @@ body.light-theme {
     color: white;
     transition: background-color 0.3s, color 0.3s; /* Transizione per effetto liscio */
   }
+  /* Media Query per schermi piccoli come telefoni (max larghezza 600px) */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column; /* Cambia la direzione del flex per colonne su schermi piccoli */
+    align-items: center; /* Centra gli elementi in orizzontale */
+    padding: 10px; /* Aggiunge un po' di padding per i dispositivi mobili */
+  }
+
+  .carousel {
+    width: 100%; /* Imposta la larghezza del carousel al 100% su schermi piccoli */
+  }
+
+  h5 {
+    font-size: 18px; /* Riduce la dimensione del font per una migliore leggibilità su schermi piccoli */
+    padding: 5px; /* Aggiunge padding per il titolo */
+    border-width: 2px; /* Riduce la larghezza del bordo */
+  }
+
+  button {
+    padding: 10px 15px; /* Aumenta il padding del pulsante per un migliore tocco */
+    font-size: 16px; /* Aumenta la dimensione del font del pulsante */
+  }
+}

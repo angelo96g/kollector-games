@@ -42,3 +42,24 @@
     background-color: #0056b3;
   }
   
+  /* Media Query per schermi più piccoli */
+@media (max-width: 600px) {
+  .login-form {
+      width: 90%; /* Riduce la larghezza a 90% per adattarsi meglio agli schermi piccoli */
+      padding: 15px; /* Riduce il padding */
+  }
+
+  .login-form h2 {
+      font-size: 1.5em; /* Riduce la dimensione del font per il titolo */
+  }
+
+  .login-form input {
+      padding: 8px; /* Riduce il padding interno degli input */
+      font-size: 0.9em; /* Riduce la dimensione del font per gli input */
+  }
+
+  .login-form button {
+      padding: 8px; /* Riduce il padding del pulsante */
+      font-size: 0.9em; /* Riduce la dimensione del font per il pulsante */
+  }
+}
