@@ -25,7 +25,7 @@
     "title": "Black Myth: Wukong",
     "price": 59.99,
     "description": "Un action RPG basato sulla mitologia cinese con spettacolari combattimenti e magia.",
-    "image": "https://www.drgames.it/wp-content/uploads/2023/12/black-myth-wukong-ps5-prevendita-versione-eu-multilingue-dr-games.jpg"
+    "image": "https://m.media-amazon.com/images/I/814doRZjgML._AC_UF894,1000_QL80_.jpg"
   },
   {
     "id": 5,
@@ -54,5 +54,12 @@
     "price": 59.99,
     "description": "Ritorna alle origini con stealth e parkour nella storica Baghdad.",
     "image": "https://m.media-amazon.com/images/I/81UyWpCOPNL._AC_UF1000,1000_QL80_.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Stellar Blade",
+    "price": 59.99,
+    "description": "action adventure.",
+    "image": "https://static.gamesmen.com.au/media/catalog/product/cache/57ddbad6affa8d28869fa47188b75842/s/t/stellar_blade_ps5_cover.jpg"
   }
 ]
